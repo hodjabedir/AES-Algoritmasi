@@ -1,0 +1,290 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 08.08.2020 10:54:35
+// Design Name: 
+// Module Name: sboxme
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module sboxme(
+
+    input  [7:0] b_in,
+    output reg[7:0] b_out
+    );
+    
+    always @* begin
+            case (b_in)
+               8'h00: b_out=8'h63;
+               8'h01: b_out=8'h7c;
+               8'h02: b_out=8'h77;
+               8'h03: b_out=8'h7b;
+               8'h04: b_out=8'hf2;
+               8'h05: b_out=8'h6b;
+               8'h06: b_out=8'h6f;
+               8'h07: b_out=8'hc5;
+               8'h08: b_out=8'h30;
+               8'h09: b_out=8'h01;
+               8'h0a: b_out=8'h67;
+               8'h0b: b_out=8'h2b;
+               8'h0c: b_out=8'hfe;
+               8'h0d: b_out=8'hd7;
+               8'h0e: b_out=8'hab;
+               8'h0f: b_out=8'h76;
+               8'h10: b_out=8'hca;
+               8'h11: b_out=8'h82;
+               8'h12: b_out=8'hc9;
+               8'h13: b_out=8'h7d;
+               8'h14: b_out=8'hfa;
+               8'h15: b_out=8'h59;
+               8'h16: b_out=8'h47;
+               8'h17: b_out=8'hf0;
+               8'h18: b_out=8'had;
+               8'h19: b_out=8'hd4;
+               8'h1a: b_out=8'ha2;
+               8'h1b: b_out=8'haf;
+               8'h1c: b_out=8'h9c;
+               8'h1d: b_out=8'ha4;
+               8'h1e: b_out=8'h72;
+               8'h1f: b_out=8'hc0;
+               8'h20: b_out=8'hb7;
+               8'h21: b_out=8'hfd;
+               8'h22: b_out=8'h93;
+               8'h23: b_out=8'h26;
+               8'h24: b_out=8'h36;
+               8'h25: b_out=8'h3f;
+               8'h26: b_out=8'hf7;
+               8'h27: b_out=8'hcc;
+               8'h28: b_out=8'h34;
+               8'h29: b_out=8'ha5;
+               8'h2a: b_out=8'he5;
+               8'h2b: b_out=8'hf1;
+               8'h2c: b_out=8'h71;
+               8'h2d: b_out=8'hd8;
+               8'h2e: b_out=8'h31;
+               8'h2f: b_out=8'h15;
+               8'h30: b_out=8'h04;
+               8'h31: b_out=8'hc7;
+               8'h32: b_out=8'h23;
+               8'h33: b_out=8'hc3;
+               8'h34: b_out=8'h18;
+               8'h35: b_out=8'h96;
+               8'h36: b_out=8'h05;
+               8'h37: b_out=8'h9a;
+               8'h38: b_out=8'h07;
+               8'h39: b_out=8'h12;
+               8'h3a: b_out=8'h80;
+               8'h3b: b_out=8'he2;
+               8'h3c: b_out=8'heb;
+               8'h3d: b_out=8'h27;
+               8'h3e: b_out=8'hb2;
+               8'h3f: b_out=8'h75;
+               8'h40: b_out=8'h09;
+               8'h41: b_out=8'h83;
+               8'h42: b_out=8'h2c;
+               8'h43: b_out=8'h1a;
+               8'h44: b_out=8'h1b;
+               8'h45: b_out=8'h6e;
+               8'h46: b_out=8'h5a;
+               8'h47: b_out=8'ha0;
+               8'h48: b_out=8'h52;
+               8'h49: b_out=8'h3b;
+               8'h4a: b_out=8'hd6;
+               8'h4b: b_out=8'hb3;
+               8'h4c: b_out=8'h29;
+               8'h4d: b_out=8'he3;
+               8'h4e: b_out=8'h2f;
+               8'h4f: b_out=8'h84;
+               8'h50: b_out=8'h53;
+               8'h51: b_out=8'hd1;
+               8'h52: b_out=8'h00;
+               8'h53: b_out=8'hed;
+               8'h54: b_out=8'h20;
+               8'h55: b_out=8'hfc;
+               8'h56: b_out=8'hb1;
+               8'h57: b_out=8'h5b;
+               8'h58: b_out=8'h6a;
+               8'h59: b_out=8'hcb;
+               8'h5a: b_out=8'hbe;
+               8'h5b: b_out=8'h39;
+               8'h5c: b_out=8'h4a;
+               8'h5d: b_out=8'h4c;
+               8'h5e: b_out=8'h58;
+               8'h5f: b_out=8'hcf;
+               8'h60: b_out=8'hd0;
+               8'h61: b_out=8'hef;
+               8'h62: b_out=8'haa;
+               8'h63: b_out=8'hfb;
+               8'h64: b_out=8'h43;
+               8'h65: b_out=8'h4d;
+               8'h66: b_out=8'h33;
+               8'h67: b_out=8'h85;
+               8'h68: b_out=8'h45;
+               8'h69: b_out=8'hf9;
+               8'h6a: b_out=8'h02;
+               8'h6b: b_out=8'h7f;
+               8'h6c: b_out=8'h50;
+               8'h6d: b_out=8'h3c;
+               8'h6e: b_out=8'h9f;
+               8'h6f: b_out=8'ha8;
+               8'h70: b_out=8'h51;
+               8'h71: b_out=8'ha3;
+               8'h72: b_out=8'h40;
+               8'h73: b_out=8'h8f;
+               8'h74: b_out=8'h92;
+               8'h75: b_out=8'h9d;
+               8'h76: b_out=8'h38;
+               8'h77: b_out=8'hf5;
+               8'h78: b_out=8'hbc;
+               8'h79: b_out=8'hb6;
+               8'h7a: b_out=8'hda;
+               8'h7b: b_out=8'h21;
+               8'h7c: b_out=8'h10;
+               8'h7d: b_out=8'hff;
+               8'h7e: b_out=8'hf3;
+               8'h7f: b_out=8'hd2;
+               8'h80: b_out=8'hcd;
+               8'h81: b_out=8'h0c;
+               8'h82: b_out=8'h13;
+               8'h83: b_out=8'hec;
+               8'h84: b_out=8'h5f;
+               8'h85: b_out=8'h97;
+               8'h86: b_out=8'h44;
+               8'h87: b_out=8'h17;
+               8'h88: b_out=8'hc4;
+               8'h89: b_out=8'ha7;
+               8'h8a: b_out=8'h7e;
+               8'h8b: b_out=8'h3d;
+               8'h8c: b_out=8'h64;
+               8'h8d: b_out=8'h5d;
+               8'h8e: b_out=8'h19;
+               8'h8f: b_out=8'h73;
+               8'h90: b_out=8'h60;
+               8'h91: b_out=8'h81;
+               8'h92: b_out=8'h4f;
+               8'h93: b_out=8'hdc;
+               8'h94: b_out=8'h22;
+               8'h95: b_out=8'h2a;
+               8'h96: b_out=8'h90;
+               8'h97: b_out=8'h88;
+               8'h98: b_out=8'h46;
+               8'h99: b_out=8'hee;
+               8'h9a: b_out=8'hb8;
+               8'h9b: b_out=8'h14;
+               8'h9c: b_out=8'hde;
+               8'h9d: b_out=8'h5e;
+               8'h9e: b_out=8'h0b;
+               8'h9f: b_out=8'hdb;
+               8'ha0: b_out=8'he0;
+               8'ha1: b_out=8'h32;
+               8'ha2: b_out=8'h3a;
+               8'ha3: b_out=8'h0a;
+               8'ha4: b_out=8'h49;
+               8'ha5: b_out=8'h06;
+               8'ha6: b_out=8'h24;
+               8'ha7: b_out=8'h5c;
+               8'ha8: b_out=8'hc2;
+               8'ha9: b_out=8'hd3;
+               8'haa: b_out=8'hac;
+               8'hab: b_out=8'h62;
+               8'hac: b_out=8'h91;
+               8'had: b_out=8'h95;
+               8'hae: b_out=8'he4;
+               8'haf: b_out=8'h79;
+               8'hb0: b_out=8'he7;
+               8'hb1: b_out=8'hc8;
+               8'hb2: b_out=8'h37;
+               8'hb3: b_out=8'h6d;
+               8'hb4: b_out=8'h8d;
+               8'hb5: b_out=8'hd5;
+               8'hb6: b_out=8'h4e;
+               8'hb7: b_out=8'ha9;
+               8'hb8: b_out=8'h6c;
+               8'hb9: b_out=8'h56;
+               8'hba: b_out=8'hf4;
+               8'hbb: b_out=8'hea;
+               8'hbc: b_out=8'h65;
+               8'hbd: b_out=8'h7a;
+               8'hbe: b_out=8'hae;
+               8'hbf: b_out=8'h08;
+               8'hc0: b_out=8'hba;
+               8'hc1: b_out=8'h78;
+               8'hc2: b_out=8'h25;
+               8'hc3: b_out=8'h2e;
+               8'hc4: b_out=8'h1c;
+               8'hc5: b_out=8'ha6;
+               8'hc6: b_out=8'hb4;
+               8'hc7: b_out=8'hc6;
+               8'hc8: b_out=8'he8;
+               8'hc9: b_out=8'hdd;
+               8'hca: b_out=8'h74;
+               8'hcb: b_out=8'h1f;
+               8'hcc: b_out=8'h4b;
+               8'hcd: b_out=8'hbd;
+               8'hce: b_out=8'h8b;
+               8'hcf: b_out=8'h8a;
+               8'hd0: b_out=8'h70;
+               8'hd1: b_out=8'h3e;
+               8'hd2: b_out=8'hb5;
+               8'hd3: b_out=8'h66;
+               8'hd4: b_out=8'h48;
+               8'hd5: b_out=8'h03;
+               8'hd6: b_out=8'hf6;
+               8'hd7: b_out=8'h0e;
+               8'hd8: b_out=8'h61;
+               8'hd9: b_out=8'h35;
+               8'hda: b_out=8'h57;
+               8'hdb: b_out=8'hb9;
+               8'hdc: b_out=8'h86;
+               8'hdd: b_out=8'hc1;
+               8'hde: b_out=8'h1d;
+               8'hdf: b_out=8'h9e;
+               8'he0: b_out=8'he1;
+               8'he1: b_out=8'hf8;
+               8'he2: b_out=8'h98;
+               8'he3: b_out=8'h11;
+               8'he4: b_out=8'h69;
+               8'he5: b_out=8'hd9;
+               8'he6: b_out=8'h8e;
+               8'he7: b_out=8'h94;
+               8'he8: b_out=8'h9b;
+               8'he9: b_out=8'h1e;
+               8'hea: b_out=8'h87;
+               8'heb: b_out=8'he9;
+               8'hec: b_out=8'hce;
+               8'hed: b_out=8'h55;
+               8'hee: b_out=8'h28;
+               8'hef: b_out=8'hdf;
+               8'hf0: b_out=8'h8c;
+               8'hf1: b_out=8'ha1;
+               8'hf2: b_out=8'h89;
+               8'hf3: b_out=8'h0d;
+               8'hf4: b_out=8'hbf;
+               8'hf5: b_out=8'he6;
+               8'hf6: b_out=8'h42;
+               8'hf7: b_out=8'h68;
+               8'hf8: b_out=8'h41;
+               8'hf9: b_out=8'h99;
+               8'hfa: b_out=8'h2d;
+               8'hfb: b_out=8'h0f;
+               8'hfc: b_out=8'hb0;
+               8'hfd: b_out=8'h54;
+               8'hfe: b_out=8'hbb;
+               8'hff: b_out=8'h16;
+            endcase
+	end
+    
+endmodule
